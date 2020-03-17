@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Import the component -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+    <title>Amazon</title>
+  </head>
+
+  <body
+    style="background-image: url('https://user-images.githubusercontent.com/2279051/36819127-dc9e33ea-1c9c-11e8-9a93-0d3c0a674f02.png'); width: 100vw; height: 100vh; background-size: cover"
+  >
+    <model-viewer
+      ar
+      alt="Amazon in store model"
+      src="./models/cx-test.gltf"
+      ios-src="./models/cx-test.usdz"
+      style="height: 30%; width: 30%"
+      ar-scale="auto"
+      camera-controls
+      magic-leap
+    ></model-viewer>
+
+    <div id="app"></div>
+  </body>
+</html>
